@@ -1,0 +1,80 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#header {
+    grid-area: h;
+    background-color:lightblue;
+    text-align: center;
+}
+
+#nav {
+    grid-area: n;
+    background-color:teal;
+    display: flex;
+    flex-direction: row;
+}
+
+#nav a {
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    border-width: 0px;
+    border-right: 1px;
+    border-color: black;
+    border-style: solid;
+    
+}
+
+#nav a:visited {
+    color: white;
+    text-decoration: none;
+}
+
+#col1, #col2, #col3 {
+    height: 300px;
+    padding: 10px;
+}
+
+#col1 {
+    background-color: grey;
+    flex: 1 200px;
+}
+
+#col2 {
+    background-color: gainsboro;
+    flex: 2 300px;
+}
+
+#col3 {
+    vertical-align: middle;
+    background-color: ghostwhite;
+    flex: 1 200px;
+}
+
+#content {
+    grid-area: c;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#footer {
+    grid-area: f;
+    background-color: teal;
+    text-align: center;
+    color: white;
+    padding: 22px;
+}
+
+#container {
+    display: grid;
+    grid-template-areas:
+    'h h h h'
+    'h h h h'
+    'n n n n'
+    'c c c c'
+    'f f f f'
+    'f f f f';
+}
