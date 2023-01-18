@@ -1,0 +1,81 @@
+h1, h2, h3, h4, h5, h6 {
+    color: #A4A400;
+    background-color: #F0F0F0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-decoration: underline;
+    font-weight: normal;
+}
+
+h2 {
+    font-size: 22pt;
+}
+
+#main-title {
+    text-align: center;
+}
+
+
+
+body {
+    background-color: white;
+    color: #404040;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 11pt;
+}
+
+a {
+    color: #A4A400;
+}
+
+a:visited {
+    color: #A4A400;
+}
+
+.comment {
+    background-color: #FFFFA8;
+    font-style: italic;
+    margin-left: 20px;
+    font-size: 90%;
+}
+
+.list-none {
+    list-style: none;
+    padding-left: 0;
+}
+
+.main-image {
+    width:150pt;
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px solid black;
+  }
+  
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: #A4A400;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+  
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+  }
+  
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+  }
+
+  .footer {
+    font-family: 'Courier New', Courier, monospace;
+    position: relative;
+    align-content: center;
+    float: right;
+  }
+
+  
