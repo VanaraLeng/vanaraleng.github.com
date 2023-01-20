@@ -66,14 +66,8 @@ ol > li {
     flex: 0 0 auto;
 }
 
-.detail-key {
-    display: block;
+dt {
     color: #ee6c4d;
-}
-
-.detail-value {
-    color: #3d5a80;
-    padding-left: 30pt;
 }
 
 li {
