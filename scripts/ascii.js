@@ -1,73 +1,69 @@
+//eslint
 var index = 0;
 var inputText = "";
-var frames = [];
 var timer = null;
-var isTurbo = false;
 
 window.onload = onloadFunction;
 
 function onloadFunction() { 
-    let startButton = document.getElementById("start");
-    let stopButton = document.getElementById("stop");
-    let animation = document.getElementById("animation");
-    let fontSize = document.getElementById("fontsize");
-    let textArea = document.getElementById("text-area");
-    let turbo = document.getElementById("turbo");
+    const startButton = document.getElementById("start");
+    const stopButton = document.getElementById("stop");
+    const animation = document.getElementById("animation");
+    const fontSize = document.getElementById("fontsize");
+    const textArea = document.getElementById("text-area");
+    const turbo = document.getElementById("turbo");
     
-
-    startButton.onclick = () => {
+    startButton.onclick = function() {
         startButton.disabled = true;
         stopButton.disabled = false;
 
-        startAnimation()
+        startAnimation();
 
         // Backup input text
         inputText = textArea.value;
-    }
+    };
 
-    stopButton.onclick = () => {
+    stopButton.onclick = function() {
         stopButton.disabled = true;
         startButton.disabled = false;
-        clearTimer();
+        if (timer != null) {
+            clearInterval(timer);
+        }
 
         // Inset input text
         textArea.value = inputText;
-    }
+    };
 
-    fontSize.onchange = () => {
+    fontSize.onchange = function() {
         textArea.className = "text" + fontSize.value;
-    }
+    };
 
-    animation.onchange = () => {
+    animation.onchange = function() {
         if (timer != null) {
             clearInterval(timer);
-            startAnimation();
+            
+            // If timer is running
+            if (startButton.disabled) {
+                startAnimation();
+            }
         }
-    }
+    };
 
-    turbo.onchange = () => {
+    turbo.onchange = function() {
         if (timer != null) {
             clearInterval(timer);
             startAnimation();
         }
         
-    }
+    };
 }
 
 function startAnimation() {
-    let animationName = document.getElementById("animation").value;
-    let turbo = document.getElementById("turbo");
+    const animationName = document.getElementById("animation").value;
+    const turbo = document.getElementById("turbo");
+    const animation = ANIMATIONS[animationName];
 
-    switch (animationName) {
-        case "Exercise":  animation = EXERCISE; break;
-        case "Juggler" : animation = JUGGLER; break;
-        case "Bike" : animation = BIKE; break;
-        case "Dive" : animation = DIVE; break;
-        default: animation = BLANK; break;
-
-    }
-
-    let frames = animation.split("=====\n");
+    const frames = animation.split("=====\n");
 
     if (turbo.checked) {
         timer = setInterval(animate, 50, frames);
@@ -82,5 +78,5 @@ function animate(frames) {
     if (index >= frames.length) {
         index = 0; // reset index
     }
-    document.getElementById("text-area").value = frames[index]
+    document.getElementById("text-area").value = frames[index];
 }
