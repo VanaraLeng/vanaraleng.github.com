@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Regular Expression 1</title>
+    <link href="text/regularexpression.css" rel="stylesheet">
+</head>
+<body>
+    <form>
+        <fieldset id="fieldset">
+            <div>
+                <label id="emailLabel" for="email">Email Address</label>
+                <input id="email" type="text" pattern="" placeholder="Enter email">
+            </div>
+                
+            <div>
+                <label for="password">Password</label>
+                <input id="password" type="text" pattern="^(?=.*[0-9])[a-zA-Z0-9]{9,}$" placeholder="Password">
+            </div>
+
+            <div>
+                <label for="url">URL</label>
+                <input id="url" type="text" pattern="^(https:\/\/|http:\/\/){1}([0-9A-Za-z.]+)" placeholder="URL">
+            </div>
+
+            <div id="checkbutton"> <input type="checkbox" value="f"> Accept T&C </div>
+ 
+            <input id="submit" type="submit">
+
+        </fieldset>
+    </form>
+</body>
+</html>

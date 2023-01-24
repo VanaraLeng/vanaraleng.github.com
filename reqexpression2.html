@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link href="text/regularexpression2.css" rel="stylesheet">
+</head>
+<body>
+    <div id="nav">
+        <div>
+            <a class="menu-title">MUM Golden Dome Market:::SRM System</a>
+            <a class="menu-item">Product</a>
+            <a class="menu-item">Supplies</a>
+            
+            <div id="logout-button">
+                Hello! 
+                <a  class="button">Sign out</a>
+            </div>
+            
+            
+        </div>
+    </div>
+
+    <div id="content">
+        <h2> New Product Form </h2>
+
+        <form>
+            <fieldset id="grid2">
+                <div id="d-number"> 
+                    <label for="number">Product Number</label>
+                    <input id="number" type="text" pattern="">
+                </div>
+    
+                <div id="d-name">
+                    <label for="name">Name</label>
+                    <input id="name" type="text">
+                </div>
+    
+                <div id="d-price">
+                    <label for="price">Unit Price</label>
+                    <input id="price" type="text">
+                </div>
+    
+                <div id="d-stock">
+                    <label for="qtyStock">Quantity in stock</label>
+                    <input id="qtyStock" type="text">
+                </div>
+                
+                <div id="d-supplier">
+                    <label for="supplier">Supplier:</label>
+                    <select id="supplier">
+                        <option>Supplier One</option>
+                        <option>Supplier Two</option>
+                        <option>Supplier Three</option>
+                    </select> 
+                </div>
+                
+                <div id="d-date"> 
+                    <label for="date">Date supplied</label>
+                    <input id="date" type="date">
+                </div>
+     
+      
+    
+            </fieldset>
+            <div id="d-button">
+                <input type="button" value="Reset">
+                <input type="button" value="Cancel">
+                <input id="submit" type="submit" value="Add Product">
+            </div>
+            
+        </form>
+
+    </div>
+
+    
+</body>
+</html>

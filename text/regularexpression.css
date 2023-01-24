@@ -1,0 +1,66 @@
+body {
+    font-family: sans-serif;
+    font-size: 12pt;
+    margin: 0;
+}
+
+input[type="text"] {
+    height: 40px;
+    width: 100%;
+    padding-left: 8px;
+    font-size: 12pt;
+    border-style: solid;
+    border-color: gainsboro;
+    border-width: 1px;
+    border-radius: 6px;
+}
+
+input[type="submit"] {
+    width: 100px;
+    height: 40px;
+    margin-left: 20px;
+    background-color: dodgerblue; /* Green */
+    border-style: none;
+    border-radius: 6px;
+    color: white;
+    
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.button {
+    width: 100px;
+    padding: 10px;
+    background-color: dodgerblue; /* Green */
+    border-style: none;
+    border-radius: 6px;
+    color: white;
+    
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+#logout-button {
+    position: relative;
+    left: 90%;
+}
+
+fieldset {
+    border-color: gainsboro;
+    border-radius: 10px;
+    margin: 20px;
+}
+
+div {
+    margin:  20px;
+}
+
+label {
+    display: block;
+    padding-bottom: 8px;
+    font-size: 12pt;
+}

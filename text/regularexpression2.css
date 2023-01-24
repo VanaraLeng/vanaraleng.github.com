@@ -1,0 +1,141 @@
+body {
+    font-family: sans-serif;
+    font-size: 12pt;
+    margin: 0;
+}
+
+input {
+    height: 40px;
+    width: 100%;
+    padding-left: 8px;
+    font-size: 12pt;
+    border-style: solid;
+    border-color: gainsboro;
+    border-width: 1px;
+    border-radius: 6px;
+}
+
+select {
+    height: 40px;
+    width: 100%;
+    padding-left: 8px;
+    font-size: 12pt;
+    border-style: solid;
+    border-color: gainsboro;
+    border-width: 1px;
+    border-radius: 6px;
+}
+
+input[type="submit"], input[type="button"], .button {
+    width: 120px;
+    padding: 10px;
+    margin-left: 20px;
+    background-color: white; /* Green */
+    border-style: solid;
+    border-radius: 6px;
+    border-color: cornflowerblue;
+    color: cornflowerblue;
+    
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+#logout-button {
+    position: relative;
+    float: right;
+    margin: 0;
+    color: white;
+    font-size: 14pt;
+}
+
+h2 {
+    font-weight: lighter;
+}
+
+fieldset {
+    border-color: gainsboro;
+    border-radius: 10px;
+    margin: 20px;
+}
+
+div {
+    margin:  20px;
+}
+
+label {
+    display: block;
+    padding-bottom: 8px;
+    font-size: 12pt;
+}
+
+#nav {
+    margin: 0;
+    background-color: cornflowerblue;
+    display: inline-block;
+    width: 100%;
+}
+
+a {
+    color: white;
+}
+
+a:visited {
+    color: white;
+}
+
+.menu-title {
+    font-size: 30pt;
+    color: white;
+    margin-right: 20px;
+}
+
+.menu-item {
+    height: 40px;
+    margin-left: 10px;
+    padding-left: 10px;
+    font-size: 20pt;
+    border-left-style: solid;
+    border-color: white;
+}
+
+#grid2 {
+    margin: 0;
+    display: grid;
+    grid-template-areas: 
+    'c1 c4'
+    'c2 c5'
+    'c3 c6';
+}
+
+#d-number {
+    grid-area: c1;
+}
+
+#d-name {
+    grid-area: c2;
+}
+
+#d-price {
+    grid-area: c3;
+}
+
+#d-stock {
+    grid-area: c4;
+}
+
+#d-supplier  {
+    grid-area: c5;
+}
+
+#d-date {
+    grid-area: c6;
+}
+
+#d-button {
+    float: right;
+    grid-area: c7;
+    display: flex;
+    flex-direction: row;
+}
