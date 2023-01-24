@@ -28,7 +28,7 @@
             <fieldset id="grid2">
                 <div id="d-number"> 
                     <label for="number">Product Number</label>
-                    <input id="number" type="text" pattern="">
+                    <input id="number" type="text" pattern="\d*">
                 </div>
     
                 <div id="d-name">
@@ -38,12 +38,12 @@
     
                 <div id="d-price">
                     <label for="price">Unit Price</label>
-                    <input id="price" type="text">
+                    <input id="price" type="text" pattern="^\d*\.?\d*$">
                 </div>
     
                 <div id="d-stock">
                     <label for="qtyStock">Quantity in stock</label>
-                    <input id="qtyStock" type="text">
+                    <input id="qtyStock" type="text" pattern="\d*">
                 </div>
                 
                 <div id="d-supplier">
