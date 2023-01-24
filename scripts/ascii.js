@@ -17,10 +17,11 @@ function onloadFunction() {
         startButton.disabled = true;
         stopButton.disabled = false;
 
-        startAnimation();
-
         // Backup input text
         inputText = textArea.value;
+        ANIMATIONS["Custom"] = inputText
+
+        startAnimation();
     };
 
     stopButton.onclick = function() {
